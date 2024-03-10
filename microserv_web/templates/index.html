@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block header %}<h1>Consultation des communes françaises</h1>{% endblock %}
+{% block content %}
+<section id="input-form" class="post">
+    <h2>Rechercher une collectivité</h2>
+    <p id="input-code"><label for="search">Code postal</label><br/><input type="text" id="code" placeholder="Code postal ?"></p>
+    <p id="input-name"><span><label for="name">Nom de la commune</label><br/><input type="text" id="name" placeholder="Nom ?" disabled></span><input type="image" id="load" src="{{ url_for('static', filename='img/valid50.png')}}" alt="Select" disabled></p>
+    <div id="suggestion"></div>
+</section>
+<section id="properties" class="post"></section>
+{% endblock content %}
