@@ -13,5 +13,8 @@ Flask:
   python3 -m pip install -U pip
   pip install -r requirements.txt
 
+- Lancer le programme:
+  Python3 run.py
+
 - Tester le microservice via Flask:
    http://127.0.0.1:5000/
